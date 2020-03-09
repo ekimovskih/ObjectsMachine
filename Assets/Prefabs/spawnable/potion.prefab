@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -5581789347663111540}
   - component: {fileID: 8694742908262048581}
   - component: {fileID: 5225356000756860525}
+  - component: {fileID: 3799812771075219506}
   m_Layer: 0
   m_Name: potion
   m_TagString: medival
@@ -59,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -130,6 +132,7 @@ MonoBehaviour:
   speed: 0.7
   stop: 0
   vol: 0.3
+  alreadystoppedonColorer: 0
 --- !u!65 &8694742908262048581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -239,3 +242,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3799812771075219506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2848520252188643244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447ebc2817ecac748bad56ab9d11ae6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHold: 1
+  item: {fileID: 0}
+  tempParent: {fileID: 0}
+  isHolding: 0

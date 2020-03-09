@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4531033387701879191}
   - component: {fileID: 8851823712981545943}
   - component: {fileID: -6804760679813235636}
+  - component: {fileID: -482166520961818983}
   m_Layer: 0
   m_Name: Lorry
   m_TagString: lorry
@@ -59,6 +60,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -147,6 +149,7 @@ MonoBehaviour:
   speed: 0.7
   stop: 0
   vol: 0.3
+  alreadystoppedonColorer: 0
 --- !u!82 &-6804760679813235636
 AudioSource:
   m_ObjectHideFlags: 0
@@ -243,3 +246,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-482166520961818983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789948380149429542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447ebc2817ecac748bad56ab9d11ae6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHold: 1
+  item: {fileID: 0}
+  tempParent: {fileID: 0}
+  isHolding: 0

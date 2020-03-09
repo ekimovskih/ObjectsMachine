@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3066477026610822840}
   - component: {fileID: 137116824967839237}
   - component: {fileID: 8045854097544723804}
+  - component: {fileID: -4300008800265424447}
   m_Layer: 0
   m_Name: conus
   m_TagString: Untagged
@@ -58,6 +59,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -128,6 +130,7 @@ MonoBehaviour:
   speed: 0.7
   stop: 0
   vol: 0.3
+  alreadystoppedonColorer: 0
 --- !u!82 &8045854097544723804
 AudioSource:
   m_ObjectHideFlags: 0
@@ -224,3 +227,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4300008800265424447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3302538472406610540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447ebc2817ecac748bad56ab9d11ae6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHold: 1
+  item: {fileID: 0}
+  tempParent: {fileID: 0}
+  isHolding: 0

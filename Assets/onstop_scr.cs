@@ -24,6 +24,8 @@ public class onstop_scr : MonoBehaviour
             {
                 button.transform.GetComponent<button_scr>().access = true;
                 parrent.transform.GetComponent<spawner_scr>().created = other.gameObject;
+                //other.transform.GetComponent<OnConveir_scr>().alreadystoppedonColorer = true;
+                Debug.Log("Zalupa");
             }
         }
         
@@ -36,8 +38,18 @@ public class onstop_scr : MonoBehaviour
             if (button.transform.GetComponent<button_scr>().access == false)
             {
                 other.transform.GetComponent<OnConveir_scr>().stop = false;
+                StartCoroutine(jump());
             }
-        }
+        } 
+        /*
+         * ПЕРЕПЕШИ СЕБЕ ВОТ ЭТО И ВСЕ БУДЕТ РАБОТАТЬ!!!!!!!!!! а я кушать ушел
+         */
+    }
+    IEnumerator jump()
+    {
+        this.gameObject.transform.position += new Vector3(20f, 0f, 0f);
+        yield return new WaitForSeconds(4f);
+        this.gameObject.transform.position -= new Vector3(20f, 0f, 0f);
     }
 }
 

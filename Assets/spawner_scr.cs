@@ -31,14 +31,7 @@ public class spawner_scr : MonoBehaviour
         {
             if ((created.tag == "lorry"))
             {
-                /*
-                Material[] mats = screen.transform.GetComponent<MeshRenderer>().materials;
-                mats[1] = screen.transform.GetComponent<MeshRenderer>().material;
-                //Debug.Log("hardly painted");
-                //letscolor = screen.transform.GetComponent<MeshRenderer>().materials;
-                //letscolor[1] = screen.transform.GetComponent<MeshRenderer>().material;*/
                 created.transform.GetComponent<MeshRenderer>().materials[1].CopyPropertiesFromMaterial(screen.transform.GetComponent<MeshRenderer>().material);
-                //CopyPropertiesFromMaterial(someMaterial)
             }
             else
             {

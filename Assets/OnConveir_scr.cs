@@ -11,6 +11,7 @@ public class OnConveir_scr : MonoBehaviour
     public bool stop = false;
     private float timer;
     public float vol = 0.3f;
+    public bool alreadystoppedonColorer = false;
     void Start()
     {
     }
@@ -37,13 +38,10 @@ public class OnConveir_scr : MonoBehaviour
                 if (this.gameObject.tag != "medival") //да я знаю что неправильно пишу этот тег, но мне лень все исправлять
                 {
                     this.gameObject.transform.rotation = new Quaternion(0, 90, 0, 0);
-                    //this.gameObject.transform.position = new Vector3(0, 0, 0);
-                } 
-                //this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+                }
             }
             if (!this.gameObject.transform.GetComponent<AudioSource>().isPlaying && !stop)
             {
-                //StopCoroutine(StopTheMusic(timer));
                 this.gameObject.transform.GetComponent<AudioSource>().Play();
             }
         }
@@ -58,14 +56,7 @@ public class OnConveir_scr : MonoBehaviour
         if (other.tag == "stopper")
         {
             stop = true;
-            //this.gameObject.transform.GetComponent<AudioSource>().Stop();
-            //StopTheMusic();
             timer = Time.time + 1f;
-        }
-        if (other.tag == "Finish")
-        {
-            //this.gameObject.transform.GetComponent<AudioSource>().Stop();
-            //StopTheMusic();
         }
     }
     private void OnCollisionStay(Collision collision)

@@ -6,7 +6,6 @@ public class arrows_scr : MonoBehaviour
 {
     public GameObject spawner = null;
     public bool which = true;
-    public int a = 1;
     // Start is called before the first frame update
     void Start()
     {
